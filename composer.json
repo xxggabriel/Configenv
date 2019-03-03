@@ -14,5 +14,6 @@
             "Config\\": "./"
         }
     },
-    "require": {}
+    "require": {},
+    "minimum-stability": "stable"
 }

@@ -3,6 +3,7 @@
     "description": "Uma biblioteca para criar arquivo de configuração.",
     "license": "MIT",
     "type": "library",
+    "keywords": ["env", "dotenv", "configenv", "config"],
     "authors": [
         {
             "name": "Gabriel Oliveira",
@@ -15,5 +16,5 @@
         }
     },
     "require": {},
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }

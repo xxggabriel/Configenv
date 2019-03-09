@@ -1,10 +1,10 @@
-<?php 
+<?php
 
 namespace Config;
 
 class Configenv
 {
-    
+
     public function setFileEnv($file)
     {
         if(!file_exists($file)){
@@ -27,12 +27,15 @@ class Configenv
     {
         $line = file($file);
 
-        for ($i=0; $i <= count($line); $i++) { 
-            if(!empty(strstr($line[$i], '#'))){
+        for ($i=0; $i <= count($line); $i++) {
+            if(@!empty(strstr($line[$i], '#'))){
                 unset($line[$i]);
             }
+            if(!empty($line[$i])){
+
+              $line[$i] = str_replace("\n", "", $line[$i]);
+            }
         }
-        
         return $line;
     }
 
